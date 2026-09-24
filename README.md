@@ -1,4 +1,6 @@
-# Ö&I CLEAN group – Next.js
+.env içine
+APP_URL=https://example.com
+
 
 Tamamen JSX bileşenleriyle hazırlanmış, statik olarak dışa aktarılan Next.js kurumsal web sitesi.
 
