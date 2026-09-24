@@ -1,0 +1,35 @@
+.cookie-banner { position: fixed; z-index: 500; left: 22px; right: 22px; bottom: 22px; display: flex; align-items: center; justify-content: space-between; gap: 28px; width: min(1120px, calc(100% - 44px)); margin: 0 auto; padding: 22px 24px; border: 1px solid var(--line); border-radius: 18px; color: var(--text); background: var(--surface); box-shadow: 0 22px 65px rgba(20,8,10,.25); }
+.cookie-banner strong { display: block; margin-bottom: 5px; font-size: 17px; }
+.cookie-banner p { max-width: 700px; margin: 0; color: var(--muted); font-size: 14px; }
+.cookie-banner a { color: var(--primary); font-weight: 750; text-decoration: underline; }
+.cookie-actions { display: flex; flex: 0 0 auto; gap: 10px; }
+.cookie-actions button { min-height: 44px; padding: 10px 17px; border-radius: 999px; font: inherit; font-size: 13px; font-weight: 800; cursor: pointer; }
+.cookie-primary { border: 1px solid var(--primary); color: white; background: var(--primary); }
+.cookie-secondary { border: 1px solid var(--line); color: var(--text); background: var(--soft); }
+.legal-page { min-height: 75vh; padding-top: 170px; }
+.legal-content { max-width: 850px; }
+.legal-breadcrumb { color: var(--muted); }
+.legal-content h1 { margin: 14px 0 10px; font-size: clamp(42px, 6vw, 70px); line-height: 1.05; letter-spacing: -.045em; }
+.legal-content h2 { margin: 38px 0 10px; font-size: 25px; }
+.legal-content p { color: var(--muted); font-size: 17px; }
+.legal-content code { padding: 2px 6px; border-radius: 6px; color: var(--text); background: var(--soft); }
+.legal-content .button { margin-top: 24px; }
+.not-found { min-height: 100svh; display: grid; place-items: center; padding: 140px 20px 80px; background: radial-gradient(circle at 20% 20%, rgba(200,16,46,.12), transparent 36%), var(--soft); }
+.not-found-card { width: min(720px, 100%); padding: 55px; border: 1px solid var(--line); border-radius: 28px; background: var(--surface); box-shadow: var(--shadow); text-align: center; }
+.not-found-card .eyebrow { justify-content: center; }
+.error-code { display: block; color: var(--primary); font-size: clamp(90px, 19vw, 170px); font-weight: 900; line-height: .85; letter-spacing: -.08em; opacity: .15; }
+.not-found h1 { margin: 18px 0 12px; font-size: clamp(34px, 6vw, 56px); line-height: 1.05; }
+.not-found p { max-width: 540px; margin: 0 auto; color: var(--muted); font-size: 17px; }
+.not-found .hero-actions { justify-content: center; }
+.modal { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 20px; visibility: hidden; opacity: 0; transition: .2s; }
+.modal.open { visibility: visible; opacity: 1; }
+.modal-backdrop { position: absolute; inset: 0; border: 0; background: rgba(13,5,7,.76); backdrop-filter: blur(6px); cursor: pointer; }
+.modal-card { position: relative; width: min(780px, 100%); max-height: 90vh; overflow: auto; border-radius: 24px; background: var(--surface); box-shadow: 0 30px 90px rgba(0,0,0,.4); transform: translateY(15px); transition: .25s; }
+.modal.open .modal-card { transform: translateY(0); }
+.modal-card > img { width: 100%; max-height: 330px; object-fit: cover; }
+.modal-content { padding: 34px; }
+.modal-content h2 { margin: 10px 0; line-height: 1.2; }
+.modal-content p { color: var(--muted); }
+.modal-close { position: absolute; z-index: 2; top: 14px; right: 14px; width: 42px; height: 42px; border: 0; border-radius: 50%; color: #111; background: rgba(255,255,255,.9); font-size: 28px; cursor: pointer; }
+.toast { position: fixed; z-index: 300; left: 50%; bottom: 25px; width: min(560px, calc(100% - 30px)); padding: 16px 20px; border-radius: 12px; color: white; background: #183f32; box-shadow: var(--shadow); text-align: center; transform: translate(-50%, 120px); opacity: 0; transition: .35s; }
+.toast.show { transform: translate(-50%, 0); opacity: 1; }

@@ -1,0 +1,70 @@
+@media (max-width: 1020px) {
+  .nav-shell { grid-template-columns: 1fr auto; }
+  .desktop-nav, .header-cta { display: none; }
+  .menu-button { display: block; }
+  .mobile-nav { position: fixed; top: 88px; left: 0; right: 0; display: flex; max-height: 0; overflow: hidden; flex-direction: column; padding: 0 22px; background: var(--surface); opacity: 0; visibility: hidden; transition: .25s; box-shadow: 0 18px 30px rgba(0,0,0,.1); }
+  .site-header.scrolled .mobile-nav { top: 72px; }
+  .mobile-nav.open { max-height: 420px; padding-top: 16px; padding-bottom: 22px; opacity: 1; visibility: visible; }
+  .mobile-nav a { padding: 13px; border-bottom: 1px solid var(--line); font-weight: 700; }
+  .mobile-nav .mobile-cta { margin-top: 10px; border: 0; border-radius: 10px; color: white; background: var(--primary); text-align: center; }
+  .menu-button.active span:first-child { transform: translateY(6px) rotate(45deg); }
+  .menu-button.active span:nth-child(2) { opacity: 0; }
+  .menu-button.active span:last-child { transform: translateY(-6px) rotate(-45deg); }
+  .service-grid { grid-template-columns: repeat(3, 1fr); }
+  .contact-shell { gap: 36px; }
+  .value-grid, .process-grid { grid-template-columns: 1fr 1fr; }
+  .page-service-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 760px) {
+  .container { width: min(calc(100% - 28px), 1200px); }
+  .nav-shell { width: calc(100% - 28px); }
+  .site-header { height: 74px; }
+  .site-header.scrolled { height: 66px; }
+  .mobile-nav { top: 74px; }
+  .site-header.scrolled .mobile-nav { top: 66px; }
+  .brand-logo { width: 160px; height: 50px; }
+  .hero { min-height: 680px; height: 92svh; }
+  .hero-overlay { background: linear-gradient(90deg, rgba(17,10,11,.86), rgba(41,13,18,.62)); }
+  .hero h1 { font-size: clamp(40px, 12vw, 60px); }
+  .hero p { font-size: 17px; }
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+  .trust-grid div { min-height: 90px; border-bottom: 1px solid rgba(255,255,255,.15); }
+  .section { padding: 78px 0; }
+  .highlight-grid, .service-grid { grid-template-columns: 1fr 1fr; }
+  .service-section-heading { align-items: flex-start; flex-direction: column; }
+  .home-process-grid { grid-template-columns: 1fr; }
+  .contact-shell { grid-template-columns: 1fr; }
+  .content-split, .contact-page-grid { grid-template-columns: 1fr; gap: 38px; }
+  .content-split.reverse .content-media { order: initial; }
+  .content-media, .content-media img { min-height: 340px; }
+  .cta-band .container { align-items: flex-start; flex-direction: column; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+  .cookie-banner { align-items: stretch; flex-direction: column; gap: 16px; }
+  .cookie-actions button { flex: 1; }
+}
+@media (max-width: 520px) {
+  .icon-button { display: none; }
+  .hero-actions .button { width: 100%; }
+  .trust-grid div { flex-direction: column; gap: 0; text-align: center; }
+  .trust-grid span { max-width: none; }
+  .highlight-grid, .service-grid { grid-template-columns: 1fr; }
+  .field-row { grid-template-columns: 1fr; gap: 0; }
+  .value-grid, .process-grid, .page-service-grid { grid-template-columns: 1fr; }
+  .page-hero { min-height: 460px; padding: 145px 0 65px; }
+  .contact-panel, .contact-page .contact-form { padding: 25px 20px; }
+  .contact-form { padding: 24px 18px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 38px; }
+  .footer-grid > div:first-child { grid-column: auto; }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .whatsapp { right: 14px; bottom: 14px; }
+  .whatsapp img { width: 52px; height: 52px; }
+  .whatsapp { bottom: 178px; }
+  .cookie-banner { left: 12px; right: 12px; bottom: 12px; width: calc(100% - 24px); padding: 18px; }
+  .cookie-actions { flex-direction: column-reverse; }
+  .not-found-card { padding: 38px 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}

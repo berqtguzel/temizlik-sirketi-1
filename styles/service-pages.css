@@ -1,0 +1,25 @@
+.values { background: var(--soft); }
+.value-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.value-card { padding: 30px 26px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.value-number { display: block; margin-bottom: 18px; color: var(--primary); font-size: 14px; font-weight: 850; letter-spacing: .12em; }
+.value-card h3 { margin: 0 0 10px; }
+.value-card p { margin: 0; color: var(--muted); }
+.page-service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.page-service-card { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: 0 5px 20px rgba(30,15,18,.06); }
+.page-service-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+.page-service-card > div { padding: 26px; }
+.page-service-card h2 { margin: 0 0 10px; font-size: 21px; }
+.page-service-card p { margin: 0; color: var(--muted); }
+.detail-link { display: inline-flex; margin-top: 20px; color: var(--primary); font-weight: 800; }
+.detail-link:hover { color: var(--primary-dark); }
+.process { background: var(--soft); }
+.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; counter-reset: process; }
+.process-card { position: relative; padding: 30px 24px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); counter-increment: process; }
+.process-card::before { content: "0" counter(process); display: block; margin-bottom: 18px; color: var(--primary); font-size: 28px; font-weight: 900; }
+.process-card h3 { margin: 0 0 8px; }
+.process-card p { margin: 0; color: var(--muted); }
+.cta-band { padding: 70px 0; color: white; background: linear-gradient(120deg, #6e0717, var(--primary-dark)); }
+.cta-band .container { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.cta-band h2 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 42px); line-height: 1.12; }
+.cta-band p { margin: 0; color: rgba(255,255,255,.72); }
+.cta-band .button { flex: 0 0 auto; color: var(--primary-dark); background: white; box-shadow: none; }
